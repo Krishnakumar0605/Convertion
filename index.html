@@ -71,6 +71,22 @@
             cursor: pointer;
         }
 
+        .p{
+            position: relative;
+        }
+
+        .p::after{
+            content: "";
+            height: 5px;
+            width: 5vw;
+            position: absolute;
+        }
+
+        .p:hover::after{
+            border-radius: 5px;
+            background-color: var(--grey);
+        }
+
         /* Banner-1 */
 
         .banner {
@@ -219,7 +235,9 @@
             justify-content: space-between;
         }
 
-
+        .img:hover{
+            transform: scale(1.01);
+        }
 
 
 
@@ -235,6 +253,7 @@
             background-color: var(--yellow);
             display: flex;
             margin-bottom: 7%;
+            margin-top: 6%;
         }
 
         .Akka-2 {
@@ -312,6 +331,9 @@
             margin-right: 20%;
         }
 
+        .YoungFavourite h1{
+            margin-bottom: 20px;
+        }
 
 
 
@@ -577,6 +599,15 @@
             border: none;
             box-shadow: 0px 0px 20px var(--white);
         }
+
+        .hp:hover{
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        .icon:hover{
+            background-color: rgb(255, 255, 255);
+        }
     </style>
 </head>
 
@@ -587,16 +618,16 @@
             <img src="Assets/logo.png" alt="logo" class="logo">
             <!-- Menu -->
             <div class="menu">
-                <a href="">
+                <a href="" class="p">
                     <p>CATALOGUE</p>
                 </a>
-                <a href="">
+                <a href="" class="p">
                     <p>FASHION</p>
                 </a>
-                <a href="">
+                <a href="" class="p">
                     <p>FAVOURITE</p>
                 </a>
-                <a href="">
+                <a href="" class="p">
                     <p>LIFESTYLE</p>
                 </a>
                 <button class="signup button">SIGN UP</button>
@@ -655,8 +686,8 @@
             <h1 class="n2 after">NEW ARRIVALS</h1>
         </div>
         <div class="arrival-container">
-            <div style="display: flex; flex-direction: column;row-gap: 20px;">
-                <div style="width: 350px;"><img src="Assets/newarrival_Akka1.png" alt="Rectangle" style="width: 350px;">
+            <div style="display: flex; flex-direction: column;row-gap: 20px;" class="img">
+                <div style="width: 350px;" ><img src="Assets/newarrival_Akka1.png" alt="Rectangle" style="width: 350px;">
                 </div>
                 <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
                     <div>
@@ -674,7 +705,7 @@
             </div>
 
 
-            <div style="display: flex; flex-direction: column;row-gap: 20px;">
+            <div style="display: flex; flex-direction: column;row-gap: 20px;" class="img">
                 <div style="width: 350px;"><img src="Assets/newarrival_Akka2.png" alt="Rectangle" style="width: 350px;">
                 </div>
                 <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
@@ -693,8 +724,8 @@
 
             </div>
 
-            <div style="display: flex; flex-direction: column;row-gap: 20px;">
-                <div style="width: 350px;"><img src="Assets/newarrival_Akka3.png" alt="Rectangle" style="width: 350px;">
+            <div style="display: flex; flex-direction: column;row-gap: 20px;" class="img">
+                <div style="width: 350px;" class="img"><img src="Assets/newarrival_Akka3.png" alt="Rectangle" style="width: 350px;">
                 </div>
                 <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
                     <div>
@@ -861,7 +892,7 @@
                 <h1>FASHION</h1>
                 <p class="p1">Complete your style with awesome clothes from us.</p>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com" target="_blank" class="icon fb">
+                    <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank" class="icon fb">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
 
@@ -869,11 +900,11 @@
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
-                    <a href="https://twitter.com" target="_blank" class="icon tw">
+                    <a href="https://x.com/Krish06052008" target="_blank" class="icon tw">
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>
 
-                    <a href="https://www.linkedin.com" target="_blank" class="icon ln">
+                    <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank" class="icon ln">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>
@@ -882,22 +913,22 @@
         </div>
         <div class="f2">
             <p>Company</p>
-            <p class="p1">About</p>
-            <p class="p1">Contact Us</p>
-            <p class="p1">Support</p>
-            <p class="p1">Careers</p>
+            <p class="p1 hp">About</p>
+            <p class="p1 hp">Contact Us</p>
+            <p class="p1 hp">Support</p>
+            <p class="p1 hp">Careers</p>
         </div>
         <div class="f3">
             <p>Quick Link</p>
-            <p class="p1">Share Location</p>
-            <p class="p1">Orders Tracking</p>
-            <p class="p1">Size Guide</p>
-            <p class="p1">FAQs</p>
+            <p class="p1 hp">Share Location</p>
+            <p class="p1 hp">Orders Tracking</p>
+            <p class="p1 hp">Size Guide</p>
+            <p class="p1 hp">FAQs</p>
         </div>
         <div class="f4">
             <p>Legal</p>
-            <p class="p1">Terms & Conditions</p>
-            <p class="p1">Privacy Policy</p>
+            <p class="p1 hp">Terms & Conditions</p>
+            <p class="p1 hp">Privacy Policy</p>
         </div>
     </div>
 </body>
