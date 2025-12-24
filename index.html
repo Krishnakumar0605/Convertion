@@ -71,18 +71,18 @@
             cursor: pointer;
         }
 
-        .p{
+        .p {
             position: relative;
         }
 
-        .p::after{
+        .p::after {
             content: "";
             height: 5px;
             width: 5vw;
             position: absolute;
         }
 
-        .p:hover::after{
+        .p:hover::after {
             border-radius: 5px;
             background-color: var(--grey);
         }
@@ -235,19 +235,10 @@
             justify-content: space-between;
         }
 
-        .img:hover{
+        .img:hover {
             transform: scale(1.01);
+            transition-duration: 2s;
         }
-
-
-
-
-
-
-
-
-
-
         /* Banner-2 */
         .banner-2 {
             background-color: var(--yellow);
@@ -323,15 +314,16 @@
             z-index: -1;
         }
 
-        .after::after{
+        .after::after {
             left: 150px;
         }
-        .after{
+
+        .after {
             margin-bottom: 40px;
             margin-right: 20%;
         }
 
-        .YoungFavourite h1{
+        .YoungFavourite h1 {
             margin-bottom: 20px;
         }
 
@@ -349,6 +341,7 @@
         .download {
             width: 28%;
             margin: auto;
+            margin-right: 25%;
         }
 
         .mobile {
@@ -357,8 +350,9 @@
         }
 
         .mobile img {
-            height: 90%;
-            margin-left: 2%;
+            height: 130%;
+            position: absolute;
+            left: 13%;
         }
 
         .store-buttons {
@@ -450,8 +444,8 @@
 
         .circle6 {
             border: 0.5px solid var(--grey);
-            top: 15vh;
-            left: 103.5vh;
+            top: 8%;
+            left: 8%;
             width: 350px;
             height: 350px;
             z-index: -1;
@@ -459,11 +453,12 @@
 
         .circle7 {
             border: 0.5px solid var(--grey);
-            top: 20vh;
-            left: 108.5vh;
+            top: 8%;
+            left: 8%;
             width: 280px;
             height: 280px;
             z-index: -1;
+            position: relative;
         }
 
 
@@ -507,7 +502,7 @@
 
         .input {
             height: 40px;
-            width: 250px;
+            width: 270px;
             border-radius: 5px;
             border: 0px;
             padding-left: 3%;
@@ -600,12 +595,12 @@
             box-shadow: 0px 0px 20px var(--white);
         }
 
-        .hp:hover{
+        .hp:hover {
             color: var(--white);
             cursor: pointer;
         }
 
-        .icon:hover{
+        .icon:hover {
             background-color: rgb(255, 255, 255);
         }
     </style>
@@ -680,14 +675,14 @@
 
     <!-- New Arrivals -->
     <!-- 3 cards -->
-     
+
     <div class="whole-container">
         <div>
             <h1 class="n2 after">NEW ARRIVALS</h1>
         </div>
         <div class="arrival-container">
             <div style="display: flex; flex-direction: column;row-gap: 20px;" class="img">
-                <div style="width: 350px;" ><img src="Assets/newarrival_Akka1.png" alt="Rectangle" style="width: 350px;">
+                <div style="width: 350px;"><img src="Assets/newarrival_Akka1.png" alt="Rectangle" style="width: 350px;">
                 </div>
                 <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
                     <div>
@@ -725,7 +720,8 @@
             </div>
 
             <div style="display: flex; flex-direction: column;row-gap: 20px;" class="img">
-                <div style="width: 350px;" class="img"><img src="Assets/newarrival_Akka3.png" alt="Rectangle" style="width: 350px;">
+                <div style="width: 350px;" class="img"><img src="Assets/newarrival_Akka3.png" alt="Rectangle"
+                        style="width: 350px;">
                 </div>
                 <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
                     <div>
@@ -858,14 +854,17 @@
         </div>
 
         <div class="mobile">
-            <img src="Assets/Mobile app.png" alt="">
             <div class="circle1 circle"></div>
             <div class="circle2 circle"></div>
             <div class="circle3 circle"></div>
             <div class="circle4 circle"></div>
-            <div class="circle5 circle"></div>
-            <div class="circle6 circle"></div>
-            <div class="circle7 circle"></div>
+            <div class="circle5 circle">
+                <div class="circle6 circle">
+                    <div class="circle7 circle">
+                        <img src="Assets/Mobile app.png" alt="">
+                    </div>
+                </div>
+            </div>
 
         </div>
 
